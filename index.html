@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Use for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link To CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- link To JS -->
+    <script src="index.js" defer></script>
+    <!-- For Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- For Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link For Gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Link For Gsap - Scroll Trigger -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Link For Lenis - Smooth Scrolling -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <!-- Link For Split Type -->
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+
+    <title>Purrfect | Pet Adoption</title>
+  </head>
+  <body>
+    <!-- Nabvar -->
+    <nav>
+      <a href="index.html" class="brand">
+        <h1>Cats<b class="accent">Styles</b></h1>
+      </a>
+      <div class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#pets">Mascotas</a> <!-- Cambié #mascotas por #pets -->
+        <a href="index.html#requirements">Requisitos</a> <!-- Cambié #requisitos por #requirements -->
+        <a href="index.html#about">Sobre</a>
+        <a href="index.html#stories">Historias</a> <!-- Cambié #historias por #stories -->
+      </div>
+      
+
+      <button class="btn-2" onclick="window.location.href='contact.html'">
+        <p>Contáctenos</p>
+        <i class="fa-solid fa-circle-arrow-right"></i>
+      </button>
+
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+
+      <div class="close-btn">
+        <i class="fas fa-times"></i>
+      </div>
+    </nav>
+    <!-- Nabvar End -->
+
+    <!-- Hero Page Section -->
+    <section class="heropage">
+      <div class="hero-headlines">
+        <h1>Encuentra al Gato que te Enamora Hoy!</h1>
+        <p>
+          Descubre a tu compañero perfecto en nuestra selección de adorables
+          gatos disponibles para adopción
+        </p>
+        <div class="hero-headlines-buttons">
+          <button class="btn-3">Nuestros Gatos</button>
+          <button class="btn-3 btn-transparent">Contáctenos</button>
+        </div>
+      </div>
+
+      <div class="hero-images">
+        <img src="img/gato1.png" class="hero-img-1" alt="gato 1" />
+        <img src="img/gato2.png" class="hero-img-1" alt="gato 1" />
+        <img src="img/gato3.png" class="hero-img-1" alt="gato 1" />
+      </div>
+    </section>
+    <!-- Hero Page Section End-->
+
+    <!-- requirements -->
+    <section class="requirements" id="requirements">
+      <div class="requirements-headlines">
+        <h1>Nuestro Proceso de Adopción</h1>
+        <p>
+          Nuestro proceso es sencillo y lleno de alegría en cada paso del camino
+        </p>
+
+        <div class="r-item-container">
+          <div class="r-item">
+            <div class="r-logo" style="background-color: #b9ff46">
+              <i class="fa-regular fa-newspaper"></i>
+            </div>
+            <h5>Presentación y Aplicación</h5>
+          </div>
+
+          <div class="r-item">
+            <div class="r-logo" style="background-color: #fff846">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h5>Asistencia y entrevista en línea</h5>
+          </div>
+
+          <div class="r-item">
+            <div class="r-logo" style="background-color: #ff8846">
+              <i class="fa-solid fa-paw"></i>
+            </div>
+            <h5>Conocer a tu gato en persona</h5>
+          </div>
+
+          <div class="r-item">
+            <div class="r-logo" style="background-color: #46c7ff">
+              <i class="fa-regular fa-file-zipper"></i>
+            </div>
+            <h5>Firma un acuerdo de adopción</h5>
+          </div>
+
+          <div class="r-item">
+            <div class="r-logo" style="background-color: #4fffca">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h5>Felicitaciones por encontrar un gato!</h5>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/img/requerimientos.png"
+        class="img-requeriments"
+        alt="imagen requerimientos"
+      />
+    </section>
+    <!-- requirements end -->
+
+    <!-- Pets Section -->
+    <section class="pets" id="pets">
+      <div class="pets-headlines">
+        <i class="fa-solid fa-paw"></i>
+        <h1>Conoce a tus gatos</h1>
+      </div>
+
+      <div class="pets-colletion">
+        <div class="pets-item">
+          <img src="/img/pet-item-1.png" class="img-pet" alt="imagen mascota" />
+          <h3>Dormilón</h3>
+        </div>
+
+        <div class="pets-item">
+          <img src="/img/pet-item-2.png" class="img-pet" alt="imagen mascota" />
+          <h3>Don Fiesta</h3>
+        </div>
+
+        <div class="pets-item">
+          <img src="/img/pet-item-3.png" alt="imagen mascota" />
+          <h3>Señor Gato</h3>
+        </div>
+      </div>
+
+      <button class="btn-3 btn-pets">
+        <p>Encuentra Más</p>
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </button>
+    </section>
+    <!-- Pets Section End -->
+
+    <!-- About Section -->
+    <div class="about" id="about">
+      <div class="about-headlines">
+        <h1>Sobre Nosotros</h1>
+        <p class="reveal-type" data-bg-color="#cccccc" data-fb-color="black">
+          CastStyle no es solo un <b>página de adopcón de gatos</b>; es un lugar
+          ideal para gatos que buscan un hogar permanente como apra personas
+          compasivas dispuestas a recibirlas con los brazos abiertos.
+        </p>
+
+        <div class="about-info">
+          <div class="about-info-item">
+            <h5>100+</h5>
+            <h6>Gatos Salvados</h6>
+          </div>
+          <div class="about-info-item">
+            <h5>100%</h5>
+            <h6>Tasa de Adopción</h6>
+          </div>
+          <div class="about-info-item">
+            <h5>5 Estrellas</h5>
+            <h6>Una Comunidad Amorosa</h6>
+          </div>
+        </div>
+        <button class="btn-3">Empezar</button>
+      </div>
+      <img src="/img/aboutImg.png" alt="mascota about" class="img-about" />
+    </div>
+    <!-- About Section End -->
+
+    <!-- Testimonials Section -->
+    <div class="testimonials" id="stories">
+      <h6>Nuestras Reseñas</h6>
+      <h1>Lo que dicen las personas</h1>
+
+      <div class="testimony-container">
+        <!-- Testimony Item 1 -->
+        <div class="testimony-item">
+          <div class="testimony-people">
+            <div class="testimony-name">
+              <img src="/img/testimony-image-1.png" alt="img testimony1" />
+              <div class="testimony-name-item">
+                <h4>Andrea Saenz</h4>
+                <p>Dueña del Señor Gato</p>
+              </div>
+            </div>
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+          <p class="testimony-text">
+            "CastStyle es una gran herramienta para encontrar un hogar perfecto
+            para mi Señor Gato. La atención personal y la confianza que recibí
+            son insuperables. Muchas gracias por su apoyo y la confianza en mí."
+          </p>
+        </div>
+
+        <!-- Testimony Item 2 -->
+        <div class="testimony-item">
+          <div class="testimony-people">
+            <div class="testimony-name">
+              <img src="/img/testimony-image-2.png" alt="img testimony1" />
+              <div class="testimony-name-item">
+                <h4>Daniel Martinez</h4>
+                <p>Dueño de Tom</p>
+              </div>
+            </div>
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+          <p class="testimony-text">
+            "Catstyles me cambió la vida cuando adoptamos a Tom. Tom llegó a
+            casa saludable, alegre y lleno de energía, y todo gracias a la
+            dedicación del equipo de Catstyles sin duda, recomendaría este
+            lugar."
+          </p>
+        </div>
+
+        <!-- Testimony Item 3 -->
+        <div class="testimony-item">
+          <div class="testimony-people">
+            <div class="testimony-name">
+              <img src="/img/testimony-image-3.png" alt="img testimony1" />
+              <div class="testimony-name-item">
+                <h4>Angy Matt</h4>
+                <p>Dueña de Mía</p>
+              </div>
+            </div>
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+          <p class="testimony-text">
+            "Adoptar a Mía fue una de las mejores decisiones que tomé gracias a
+            Catstyles. Desde el primer momento, el equipo fue increíblemente
+            atento y me ayudó a encontrar la compañera perfecta para mi hogar."
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonials Section End -->
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-links">
+          <h2>Enlaces</h2>
+          <div class="link-container">
+            <div class="links">
+              <a href="index.html">Inicio</a>
+              <a href="index.html#about">Sobre</a>
+              <a href="index.html#pets">Mascotas</a> <!-- Cambié #mascotas por #pets -->
+            </div>
+            <div class="links">
+              <a href="index.html#requirements">Requisitos</a> <!-- Cambié #requisitos por #requirements -->
+              <a href="index.html#stories">Historias</a> <!-- Cambié #historias por #stories -->
+              <a href="index.html#footer">Contáctenos</a> 
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-brand">
+          <h1>Cats<b class="accent">Styles</b></h1>
+          <p>Encuentra gatos salvados en CastStyle!</p>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-contact-info">
+          <div class="contact-info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <p>catsstyle@gmail.com</p>
+          </div>
+
+          <div class="contact-info-item">
+            <i class="fa-solid fa-phone"></i>
+            <p>+320-568-988</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright">
+        Todos los deerechos reservados a <b>CatsStyles</b>
+      </p>
+    </footer>
+    <!-- Footer Section End-->
+  </body>
+</html>
